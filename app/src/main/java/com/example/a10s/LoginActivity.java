@@ -29,7 +29,7 @@ public class LoginActivity extends AppCompatActivity implements OnClickListener 
         setContentView(R.layout.activity_login);
         skipLogin();
         initView();
-        mUsernameView.setText("别同");
+        mUsernameView.setText("虹软公司");
         mPasswordView.setText("12345678");
     }
 
