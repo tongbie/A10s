@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.a10s.Fragments.Main.SendTaskActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#D0576B"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:text="发送任务"
+        android:gravity="center|left"
+        android:paddingLeft="10dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#dcdcdc"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="6dp"
+                    android:background="@drawable/button_red"
+                    android:clickable="false"
+                    android:text="接收人员"
+                    android:textColor="#ffffff"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/receiverView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="6dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:hint="在此输入人员账号"
+                    android:maxLines="1"
+                    android:paddingLeft="6dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#dcdcdc"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="6dp"
+                    android:background="@drawable/button_red"
+                    android:clickable="false"
+                    android:text="任务标题"
+                    android:textColor="#ffffff"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/titleView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="6dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:hint="在此输入任务标题"
+                    android:maxLines="1"
+                    android:paddingLeft="6dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#dcdcdc"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="6dp"
+                    android:background="@drawable/button_red"
+                    android:clickable="false"
+                    android:text="任务期限"
+                    android:textColor="#ffffff"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/dateView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="6dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:hint="在此输入任务日期"
+                    android:maxLines="1"
+                    android:paddingLeft="6dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#dcdcdc"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_margin="6dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button_red"
+                    android:clickable="false"
+                    android:text="任务详情"
+                    android:textColor="#ffffff"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/introduceView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="在此输入详情介绍"
+                android:layout_margin="10dp"/>
+
+            <com.example.a10s.MyView.LoadButton
+                android:id="@+id/sendButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="6dp"
+                android:background="@drawable/button_red"
+                android:text="发 送"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
